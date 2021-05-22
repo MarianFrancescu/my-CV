@@ -1,3 +1,106 @@
 .contact{
     background-color: lightblue;
+    display: flex;
+
+    .left{
+        flex: 0.6;
+        overflow: hidden;
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 60px;
+                margin: 10px 0;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                padding-left: 100px;
+                font-size: 30px;
+            }
+
+            a{
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+
+                .arrow{
+                    font-size: 50px;
+                    animation: arrowBlink 2s infinite;
+                }
+
+            }
+        }
+
+    }
+
+    .right{
+        flex: 0.4;
+        position: relative;
+        background-color: whitesmoke;
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 60px;
+                margin: 10px 0;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            .icons{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .mediaIcon{
+                    font-size: 40px;
+                    margin-right: 5px;
+                    margin-left: -10px;
+                }
+                span{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+            }
+
+            .itemContainer{
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+
+                .icon{
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+
+                span{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                a {
+                    font-size: inherit;
+                    color: inherit;
+                    text-decoration: none;
+                  }
+            }
+        }
+    }
 }
