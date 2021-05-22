@@ -8,28 +8,28 @@ export default function Works() {
     const data = [
         {
             id: "1",
-            icon: "./assets/mobile.png",
-            title: "Web Design",
+            techno: "Technologies: Firebase, Angular, Bootstrap",
+            title: "PC-Builder",
             desc:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+                "That web application was created with a colleague and it is a PC configurator where the user can select components to build a PC. A build can be saved if the user is logged in. To get logged in, users can use the Google account, or create a new account and use the email and password.",
             img:
-                "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+                "assets/pc-builder.png",
         },
         {
             id: "2",
-            icon: "./assets/globe.png",
-            title: "Mobile Application",
-            desc: "text",
+            techno: "Technologies: Spring Boot, MongoDB, Angular, Bootstrap, Docker",
+            title: "Messenger",
+            desc: "This application was developed together with 2 colleagues. This is an instant messaging app, where an user have the possibility to create an account, and after signing in, a page with groups will appear. Here, the user can create a group and add other users to a specific group. Also, user's profiles can be visited.",
             img:
-                "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+                "https://user-images.githubusercontent.com/28231703/118353753-5f9cac80-b570-11eb-8207-1fd438ca0671.png",
         },
         {
             id: "3",
-            icon: "./assets/writing.png",
-            title: "Branding",
-            desc: "text2",
+            techno: "Technologies: Firebase, Angular, Bootstrap",
+            title: "Car parts shop",
+            desc: "In this application I developed my skills with Angular and tried to add basic functionalities. Here, I added separated routes for Admin and normal User. The Admin can manage the products(add, delete, edit) and the user is able to view and add the products to a shopping cart. All products are stored in Google Firebase.",
             img:
-                "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+                "assets/car-parts.png",
         },
     ];
 
@@ -48,17 +48,18 @@ export default function Works() {
                                 <div className="left">
                                     <div className="leftContainer">
                                         <div className="imgContainer">
-                                            <img src={d.img} className="image" />
+                                            <PhoneAndroidIcon />
                                         </div>
                                         <h2>{d.title}</h2>
                                         <p>
                                             {d.desc}
                                         </p>
-                                        <span>Projects</span>
+                                        <span>Tools</span>
+                                        <p>{d.techno}</p>
                                     </div>
                                 </div>
                                 <div className="right">
-                                    <img src="https://user-images.githubusercontent.com/28231703/118353753-5f9cac80-b570-11eb-8207-1fd438ca0671.png"
+                                    <img src={d.img}
                                         alt="" />
                                 </div>
                             </div>
@@ -68,7 +69,7 @@ export default function Works() {
 
             </div>
             <ChevronRightIcon className="arrow left" onClick={() => handleClick('left')} />
-            <ChevronRightIcon className="arrow right" onClick={() => handleClick()}/>
+            <ChevronRightIcon className="arrow right" onClick={() => handleClick()} />
         </div>
     )
 }

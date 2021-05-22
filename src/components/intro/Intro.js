@@ -11,9 +11,9 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hi there, I'm</h2>
+                    <h2>Hi, I'm</h2>
                     <h1>Marian Francescu</h1>
-                    <h3>Student</h3>
+                    <h3>3'rd year student in the field of computer science</h3>
                     <a href="#portfolio">
                     <ExpandMoreIcon className="arrow" />
                 </a>

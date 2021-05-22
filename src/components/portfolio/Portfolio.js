@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
 import PortfolioList from '../portfolioList/PortfolioList';
 import './portfolio.scss';
-import { featuredPortfolio,
+import {
+    featuredPortfolio,
     webPortfolio,
-    desktopPortfolio} from '../../data';
+    desktopPortfolio
+} from '../../data';
 
 export default function Portfolio() {
     const [selected, setSelected] = useState("featured");
     const [data, setData] = useState([]);
-    const list =[
+    const list = [
         {
             id: "featured",
             title: "Featured",
@@ -24,7 +26,7 @@ export default function Portfolio() {
     ];
 
     useEffect(() => {
-        switch(selected){
+        switch (selected) {
             case "featured":
                 setData(featuredPortfolio);
                 break;
@@ -33,31 +35,34 @@ export default function Portfolio() {
                 break;
             case "desktop":
                 setData(desktopPortfolio);
-                break;   
+                break;
             default:
                 setData(featuredPortfolio);
         }
-    },[selected])
+    }, [selected])
 
     return (
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <ul>
-                {list.map((item) =>(
+                {list.map((item) => (
                     <PortfolioList title={item.title} active={selected === item.id}
-                    setSelected={setSelected} id={item.id}/>
+                        setSelected={setSelected} id={item.id} />
                 ))}
             </ul>
             <div className="container">
                 {data.map((d) => (
+                    <a href={d.repo}>
                     <div className="item">
-                    <img
-                        src={d.img}
-                        alt=""
-                       
-                    />
-                    <h3>{d.title}</h3>
-                </div>
+                        
+                            <img
+                                src={d.img}
+                                alt=""
+                            />
+                            <h3>{d.title}</h3>
+                        
+                    </div>
+                    </a>
                 ))}
             </div>
         </div>
