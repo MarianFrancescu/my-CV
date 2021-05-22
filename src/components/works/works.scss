@@ -68,6 +68,10 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    @include mobile{
+                        width: 100%;
+
+                    }
 
                     .leftContainer{
                         width: 90%;
@@ -112,7 +116,7 @@
                             text-align: justify;
 
                             @include mobile{
-                                display: none;
+                                font-size: 5px;
                             }
                         }
 
