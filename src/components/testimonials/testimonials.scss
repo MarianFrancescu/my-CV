@@ -1,3 +1,99 @@
-.testimonials{
-    background-color: lightcoral;
+.testimonials {
+    background-color: rgb(204, 181, 181);
+    display: flex;
+
+    .right {
+        flex: 0.5;
+        overflow: hidden;
+
+        .wrapper {
+            width: 90%;
+            height: 100%;
+            padding-left: 70px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(135, 199, 169);
+            border-radius: 20px;
+
+            .skills {
+                flex: 0.5;
+                flex-direction: column;
+                h1 {
+                    font-size: 50px;
+                    margin: 10px 0;
+                }
+                h2 {
+                    font-size: 30px;
+                    text-align: justify;
+                }
+                h3 {
+                    font-size: 30px;
+                }
+
+                .container-skills {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+                    .button-skill{
+                        margin: 10px 10px;
+                        padding: 10px 10px;
+                        background-color: rgb(79, 119, 192);
+                        font-weight: 700;
+                        font-size: 14px;
+                        border: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .languages {
+                flex: 0.5;
+                flex-direction: column;
+
+                .language-skill{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .button-skill{
+                        margin: 10px 10px;
+                        padding: 10px 10px;
+                        background-color: rgb(51, 150, 100);
+                        font-size: 14px;
+                        font-weight: 700;
+                        border: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .left {
+        flex: 0.5;
+        position: relative;
+
+        .wrapper {
+            width: 90%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 60px;
+                margin: 10px 0;
+            }
+            h2 {
+                font-size: 30px;
+                text-align: justify;
+            }
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
 }

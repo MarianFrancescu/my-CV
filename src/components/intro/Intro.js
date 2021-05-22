@@ -18,7 +18,6 @@ export default function Intro() {
                     <ExpandMoreIcon className="arrow" />
                 </a>
                 </div>
-                
             </div>
         </div>
     )
