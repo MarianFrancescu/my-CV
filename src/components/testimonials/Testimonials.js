@@ -17,7 +17,7 @@ export default function Testimonials() {
                     <div className="skills">
                         <h1>Programming skills</h1>
                         <h2>
-                            I'm looking forward new technologies, to build interactive and modern apps.
+                            I'm trying to use new technologies, for building interactive and modern apps.
                         </h2>
                         <div class="container-skills">
                             <Button variant="contained" class="button-skill">Angular - good </Button>
